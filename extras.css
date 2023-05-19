@@ -165,3 +165,13 @@ a, a:visited {
 
 .form-group { margin-top: 0.8rem; }
 
+.video-wrapper {
+  width: 750px;
+  height: 420px;
+}
+.close-video-icon {
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+  padding: 0.5rem;
+}
