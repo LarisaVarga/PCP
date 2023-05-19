@@ -189,6 +189,7 @@
     height: auto;
     overflow: visible;
     padding: 1rem;
+    padding-top: 0.7rem;
   }
   .tabs label.container {
     border: none;
