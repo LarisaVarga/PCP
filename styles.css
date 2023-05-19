@@ -12,9 +12,9 @@
 .swift-logo, .first-assist-wrapper { width: 15rem; }
 
 .pcp-section { margin-bottom: 15px; }
-.orange-section { border: 1px solid var(--orange); }
-.blue-section { border: 1px solid var(--blue); }
-.green-section { border: 1px solid var(--green); }
+.orange-section { border: 2px solid var(--orange); }
+.blue-section { border: 2px solid var(--blue); }
+.green-section { border: 2px solid var(--green); }
 
 .section-title {
   padding: 0.7rem;

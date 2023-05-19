@@ -90,9 +90,8 @@
   }
   .section-title {
     justify-content: center;
-  }
-  .section-title{
     clip-path: polygon(0% 0%, 97% 0%, 100% 50%, 97% 100%, 0% 100%);
+    padding: 0.3rem;
   }
 
   .tabs-block { margin: 10px;}
@@ -100,19 +99,19 @@
     border: 2px solid var(--green);
     border-right: 0;
     color: var(--green);
-    padding: 0.3rem;
+    padding: 0.2rem;
     margin-right: 18px;
   }
   .tabs .tab-heading:after {
     position: absolute;
-    width: 25px;
-    height: 25px;
+    width: 22px;
+    height: 22px;
     border-top: 2px solid var(--green);
     border-bottom: 0px solid var(--green);
     border-left: 0px solid var(--green);
     border-right: 2px solid var(--green);
-    top: calc(50% - 12.5px);
-    left: calc( 100% - 12.5px);
+    top: calc(50% - 11px);
+    left: calc( 100% - 11px);
     content: "";
     transform: rotate(45deg);
     background-color: transparent;
