@@ -90,7 +90,7 @@
   }
   .section-title {
     justify-content: center;
-    clip-path: polygon(0% 0%, 97% 0%, 100% 50%, 97% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 98% 0%, 100% 50%, 98% 100%, 0% 100%);
     padding: 0.3rem;
   }
 
