@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="extras.css">
+  <link rel="stylesheet" href="print.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,900;1,500;1,600;1,800;1,900&family=PT+Sans:ital@1&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <title>Universal Pre-Call Plan</title>
+</head>
+<body>
+  <main>
+    <div class="page-wrapper">
+      <div class="sections-wrapper">
+        <div class="d-flex justify-between items-center mb-1">
+          <img class="swift-logo" src="https://alumni.swaggersales.com/wp-content/uploads/2021/08/cropped-Swagger-Sales-Logo@2x.png" alt="Swagger-Sales-Logo">
+          <div class="text-right">
+            <h1 class="page-title">Universal Pre-Call Plan</h1>
+            <p id="date"></p>
+          </div>
+          <div class="first-assist-wrapper d-flex justify-end">
+            <button class="btn grey overlay-trigger" type="button" value="overlay-one"><object class="mr-05" data="./icons/grey-video-icon.svg" width="14" height="8"></object>ASSIST</button>
+            <div class="overlay" id="overlay-one">
+              <iframe src="https://player.vimeo.com/video/820953292?h=f0457235b3" width="750" height="420" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+        <section class="pcp-section orange-section"  id="orange-section">
+          <div class="section-title d-flex">
+              <span class="arrow-wrapper">
+                <img src="./icons/arrow-right.svg" alt="">
+              </span>
+              <h2>Account, context and people</h2>
+            </div>
+          <div class="section-content">
+              <div class="d-flex justify-between">
+                <h3>Account context</h3>
+                <button class="btn orange overlay-trigger" type="button" value="overlay-two"><object class="mr-05" data="./icons/orange-video-icon.svg" width="14" height="8"></object>ASSIST</button>
+                <div class="overlay" id="overlay-two">
+                  <iframe src="https://player.vimeo.com/video/809829380?h=8fe947ad9f" width="750" height="420" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="lines">
+                <div class="line long-line"></div>
+                <div class="line short-line"></div>
+              </div>
+              <div class="d-flex justify-between">
+                <div class="form-group d-flex items-center w-50 pr-1 special-flex">
+                  <h4 class="relative mr-05">Account 
+                    <!-- <span class="extra-space relative">
+                      <img src="./icons/i-orange.svg" class="info-icon orange" alt="More info icon">
+                      <p class="helper-text short">The high-level goal for this account.</p></span>: -->: 
+                  </h4>
+                  <input type="text" name="account" id="account">
+                </div>
+                <div class="form-group d-flex items-center justify-between w-50 pl-1 special-flex">
+                  <h4 class="relative mr-05">Meeting date:</h4>
+                  <input type="date" id="meeting-date" name="meeting-date" onfocus="this.showPicker()">
+                </div>
+              </div>
+              <div class="form-group d-flex items-center justify-between mb-1 special-flex items-start w-100">
+                <h4 class="relative mr-05">Strategic Objective 
+                  <span class="extra-space relative"><img src="./icons/i-orange.svg" class="info-icon orange" alt="More info icon">
+                  <p class="helper-text">The high-level, medium to long term goal for this account, e.g., "Grow monthly revenue to $X by end of Q4". Each meeting should help Advance you towards this longer-term goal.</p></span>:
+                </h4>
+                <textarea name="strategic-objective" id="strategic-objective" maxlength="255" placeholder="The high-level goal for this account"></textarea>
+              </div>
+
+              <div class="d-flex justify-between">
+                <div class="w-50 pr-1">
+                  <div class="d-flex justify-between">
+                    <h3>Meeting with</h3>
+                    <button class="btn orange overlay-trigger" type="button" value="overlay-three"><object class="mr-05" data="./icons/orange-video-icon.svg" width="14" height="8"></object>ASSIST</button>
+                    <div class="overlay" id="overlay-three">
+                      <iframe src="https://player.vimeo.com/video/809829435?h=230603999e" width="750" height="420" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <div class="lines">
+                    <div class="line long-line"></div>
+                    <div class="line short-line"></div>
+                  </div>
+                  <div class="form-group d-flex items-center justify-between special-flex">
+                    <h4 class="relative mr-05">Key Client Contact 
+                      <span class="extra-space relative"><img src="./icons/i-orange.svg" class="info-icon orange" alt="More info icon">
+                      <p class="helper-text">The most important client contact in this meeting. Typically this will be the more senior person, or the person most likely to be able to agree to the Advance you want from this meeting.</p></span>:
+                    </h4>
+                    <input type="text" name="key-contact" id="key-contact">
+                  </div>
+                  <div class="form-group d-flex items-center justify-between special-flex">
+                    <h4 class="relative mr-05">Other Client Contact 
+                      <span class="extra-space relative"><img src="./icons/i-orange.svg" class="info-icon orange" alt="More info icon">
+                      <p class="helper-text">If you are meeting with more than one client contact, the second most important person in this meeting from a decision-making perspective.</p></span>:
+                    </h4>
+                    <input type="text" name="other-contact" id="other-contact">
+                  </div>
+                </div>
+      
+                <div class="w-50 pl-1">
+                  <div class="d-flex justify-between">
+                    <h3>Our team and roles</h3>
+                    <button class="btn orange overlay-trigger" type="button" value="overlay-four"><object class="mr-05" data="./icons/orange-video-icon.svg" width="14" height="8"></object>ASSIST</button>
+                    <div class="overlay" id="overlay-four">
+                      <iframe src="https://player.vimeo.com/video/809829465?h=8a5eccaa44" width="750" height="420" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <div class="lines">
+                    <div class="line long-line"></div>
+                    <div class="line short-line"></div>
+                  </div>
+                  <div class="form-group d-flex items-center justify-between special-flex">
+                    <h4 class="relative mr-05">Meeting lead 
+                      <span class="extra-space relative"><img src="./icons/i-orange.svg" class="info-icon orange" alt="More info icon">
+                      <p class="helper-text">Who will lead this call for your team? There should only be one Lead, typically it will be the account manager (even if their boss is joining the call).</p></span>:
+                    </h4>
+                    <input type="text" name="meeting-lead" id="meeting-lead">
+                  </div>
+                  <div class="form-group d-flex items-center justify-between special-flex">
+                    <h4 class="relative mr-05">2IC / Coach
+                      <span class="extra-space relative"><img src="./icons/i-orange.svg" class="info-icon orange" alt="More info icon">
+                      <p class="helper-text">Consider whether a second person on this call will be worthwhile. This person could be your manager/coach, subject matter expert, or a trusted peer who can play the "Second in Command" 2IC role, focusing on questions, summaries, note-taking & listening.</p></span>:
+                    </h4>
+                    <input type="text" name="meeting-coach" id="meeting-coach">
+                  </div>
+                </div>
+              </div>
+
+
+          </div>
+        </section>
+
+        <section class="pcp-section blue-section">
+          <div class="section-title d-flex">        
+            <span class="arrow-wrapper">
+              <img src="./icons/arrow-right.svg" alt="">
+            </span>
+            <h2>Leverage and meeting goals</h2>
+          </div>
+          <div class="section-content" id="blue-section">
+            <div class="d-flex justify-between">
+              <div class="w-50 pr-1">
+                <div class="d-flex justify-between">
+                  <h3>Key client contact motivation</h3>
+                  <button class="btn blue overlay-trigger" type="button" value="overlay-five"><object class="mr-05" data="./icons/blue-video-icon.svg" width="14" height="8"></object>ASSIST</button>
+                  <div class="overlay" id="overlay-five">
+                    <iframe src="https://player.vimeo.com/video/809828912?h=8b6ef6b99d" width="750" height="420" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="lines">
+                  <div class="line long-line"></div>
+                  <div class="line short-line"></div>
+                </div>
+                <div class="form-group d-flex justify-between">
+                  <h4 class="relative mr-05">Carrots 
+                    <span class="extra-space relative"><img src="./icons/i-blue.svg" class="info-icon blue" alt="More info icon">
+                      <p class="helper-text">Relevant benefits that your products and services may help a Client achieve - these give you leverage and
+                        motivate Client action. Consider all potential types of benefits - technical, operational, financial and personal.</p></span>:
+                    </h4>
+                  <textarea name="carrots" maxlength="255" id="carrots" placeholder="Client's desires ( technical, operational, financial, personal)" ></textarea>
+                </div>
+                <div class="form-group d-flex justify-between">
+                  <h4 class="relative mr-05">Sticks 
+                    <span class="extra-space relative"><img src="./icons/i-blue.svg" class="info-icon blue" alt="More info icon">
+                      <p class="helper-text">Relevant Client concerns, risks or fears that your products and services might help a Client overcome or avoid. These may be technical, operational, financial or personal. Remember that avoiding a loss is often a more powerful client motivator than gaining a benefit.</p></span>:
+                    </h4>
+                  <textarea name="sticks" maxlength="255" id="sticks" placeholder="Client's pain points ( technical, operational, financial, personal)"></textarea>
+                </div>
+              </div>
+
+              <div class="w-50 pl-1">
+                <div class="d-flex justify-between">
+                  <h3>Meeting Goals</h3>
+                  <button class="btn blue overlay-trigger" type="button" value="overlay-six"><object class="mr-05" data="./icons/blue-video-icon.svg" width="14" height="8"></object>ASSIST</button>
+                  <div class="overlay" id="overlay-six">
+                    <iframe src="https://player.vimeo.com/video/809829523?h=2697782685" width="750" height="420" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="lines">
+                  <div class="line long-line"></div>
+                  <div class="line short-line"></div>
+                </div>
+                <div class="form-group d-flex justify-between">
+                  <h4 class="relative mr-05">Realistic Advance 
+                    <span class="extra-space relative"><img src="./icons/i-blue.svg" class="info-icon blue" alt="More info icon">
+                      <p class="helper-text">Based on the leverage you have identified, what is the realistic outcome you want from this meeting? May include agreements to meet again, introductions, information, conceptual agreement or a contract.</p></span>:
+                    </h4>
+                  <textarea name="ra" maxlength="500" id="ra" placeholder="Realistic outcome from this meeting?"></textarea>
+                </div>
+                <div class="form-group d-flex justify-between">
+                  <h4 class="relative mr-05">Optimistic Advance 
+                    <span class="extra-space relative"><img src="./icons/i-blue.svg" class="info-icon blue" alt="More info icon">
+                      <p class="helper-text">What else is possible from this meeting? What would turn a good meeting into a great one?</p></span>:
+                    </h4>
+                  <textarea name="oa" maxlength="500" id="oa" placeholder="Optimistic  outcome from this meeting?"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="pcp-section green-section">
+          <div class="section-title d-flex">
+            <span class="arrow-wrapper">
+              <img src="./icons/arrow-right.svg" alt="">
+            </span>
+            <h2>Game plan</h2>
+          </div>
+          <div class="section-content p-0" id="green-section">
+            <div class="tabs-block">
+              <div class="tabs">
+                <input type="radio" name="tabs" id="tab1" checked="checked" />
+                <label for="tab1" class="tab-heading">Launch
+                </label>
+                <div class="tab pagebreak">
+                  <div class="d-flex justify-between no-flex-on-print">
+                    <div class="os-wrapper pr-1">
+                      <div class="d-flex justify-between">
+                        <h3>Opening Statement
+                          <span class="extra-space relative"><img src="./icons/i-green.svg" class="info-icon orange" alt="More info icon">
+                            <p class="helper-text">Plan the Opening - a confident, concise first minute will dramatically increase the meeting's productivity. Use bullet points, not a script. Your opening may include the meeting purpose, a proposed agenda (including gaining permission to drive the meeting), any datapoints that give you leverage, and confirmation of time available.</p></span>:
+                          </h3>
+                        <button class="btn green overlay-trigger" type="button" value="overlay-seven"><object class="mr-05" data="./icons/green-video-icon.svg" width="14" height="8"></object>ASSIST</button>
+                        <div class="overlay" id="overlay-seven">
+                          <iframe src="https://player.vimeo.com/video/809828968?h=893fdfde91" width="750" height="420" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                      <div class="lines">
+                        <div class="line long-line"></div>
+                        <div class="line short-line"></div>
+                      </div>
+                      <textarea name="opening" maxlength="750" id="opening" class="form-group w-100"
+                      placeholder="Key points – credibility, summary, agenda, leverage, time check"></textarea>
+                    </div>
+          
+                    <div class="steps-wrapper pl-1">
+                      <div class="d-flex justify-between">
+                        <h3>Steps required in this Meeting
+                          <span class="extra-space relative"><img src="./icons/i-green.svg" class="info-icon green" alt="More info icon">
+                            <p class="helper-text">After your opening statement, which steps will you require in this meeting? DISCOVER (exchanging info), PROPOSE (proposing an advance/next step), CLOSE (overcoming objections to gain agreement to the advance). Remember that you may not need every step in every meeting. e.g., if you have already exchanged all key information prior to a meeting, you may choose to skip the DISCOVER step and jump straight to PROPOSE.</p></span>:
+                          </h3>
+                        <button class="btn green overlay-trigger" type="button" value="overlay-eight"><object class="mr-05" data="./icons/green-video-icon.svg" width="14" height="8"></object>ASSIST</button>
+                        <div class="overlay" id="overlay-eight">
+                          <iframe src="https://player.vimeo.com/video/809829574?h=0aeddc33e2" width="750" height="420" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                      <div class="lines">
+                        <div class="line long-line"></div>
+                        <div class="line short-line"></div>
+                      </div>
+                      <div class="checkboxes-wrapper form-group special-flex">
+                        <label class="container">Discover
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Propose
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Close
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="margin-top-page-two w-100"></span>
+                <input type="radio" name="tabs" id="tab2" />
+                <label for="tab2" class="tab-heading">
+                  Discover</label>
+                <div class="tab">
+                  <div class="">
+                    <div class="w-100 d-flex justify-between">
+                      <div class="discover-subheading">
+                        <div class="d-flex justify-between">
+                          <h3>Ask (Top 3)
+                            <span class="extra-space relative"><img src="./icons/i-green.svg" class="info-icon green" alt="More info icon">
+                              <p class="helper-text">Prioritize and distill the three most important questions to ask in this meeting. Focus on areas of leverage, where you can create and monetize value for the Client.</p></span>:
+                            </h3>
+                          <button class="btn green overlay-trigger" type="button" value="overlay-nine"><object class="mr-05" data="./icons/green-video-icon.svg" width="14" height="8"></object>ASSIST</button>
+                          <div class="overlay" id="overlay-nine">
+                            <iframe src="https://player.vimeo.com/video/809829612?h=ed0e500d9a" width="750" height="420" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                          </div>
+                        </div>
+                        <div class="lines">
+                          <div class="line long-line"></div>
+                          <div class="line short-line"></div>
+                        </div>
+                      </div>
+                      <div class="discover-subheading">
+                        <div class="d-flex justify-between">
+                          <h3>Tell (Top 3)
+                            <span class="extra-space relative"><img src="./icons/i-green.svg" class="info-icon green" alt="More info icon">
+                              <p class="helper-text">Prioritize and distill no more than 3 concise items of information or data to share with the Client in this meeting. Focus on information that gives you credibility /leverage and/or that manages Client expectations.</p></span>:
+                            </h3>
+                          <button class="btn green overlay-trigger" type="button" value="overlay-ten"><object class="mr-05" data="./icons/green-video-icon.svg" width="14" height="8"></object>ASSIST</button>
+                          <div class="overlay" id="overlay-ten">
+                            <iframe src="https://player.vimeo.com/video/809829256?h=5287f15ad1" width="750" height="420" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                          </div>
+                        </div>
+                        <div class="lines">
+                          <div class="line long-line"></div>
+                          <div class="line short-line"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <div class="discver-row d-flex justify-between w-100 mb-1">
+                        <textarea name="q1" id="q1" placeholder="Question 1" maxlength="255"></textarea>
+                        <textarea name="info-data1" id="info-data1" placeholder="Info or data to share 1" maxlength="255"></textarea>
+                      </div>
+                      <div class="discver-row d-flex justify-between w-100 mb-1">
+                        <textarea name="q2" id="q2" placeholder="Question 2" maxlength="255"></textarea>
+                        <textarea name="info-data2" id="info-data2" placeholder="Info or data to share 1" maxlength="255"></textarea>
+                      </div>
+                      <div class="discver-row d-flex justify-between w-100">
+                        <textarea name="q3" id="q3" placeholder="Question 3" maxlength="255"></textarea>
+                        <textarea name="info-data3" id="info-data3" placeholder="Info or data to share 3" maxlength="255"></textarea>
+                      </div>
+                    </div>
+                </div>
+              </div>
+        
+                <input type="radio" name="tabs" id="tab3" />
+                <label for="tab3" class="tab-heading">Propose</label>
+                <div class="tab">
+                  <div class="w-100">
+                    <div class="d-flex justify-between">
+                      <h3>Draft proposal
+                        <span class="extra-space relative"><img src="./icons/i-green.svg" class="info-icon green" alt="More info icon">
+                          <p class="helper-text">Based on the meeting goals, what proposal would you like to be able to make in this meeting to secure the Advance you want? If you plan a proposal in advance, you are more likely to make it, and hence more likely to advance the ball.</p></span>:
+                        </h3>
+                      <button class="btn green overlay-trigger" type="button" value="overlay-eleven"><object class="mr-05" data="./icons/green-video-icon.svg" width="14" height="8"></object>ASSIST</button>
+                      <div class="overlay" id="overlay-eleven">
+                        <iframe src="https://player.vimeo.com/video/809829311?h=64e28b6732" width="750" height="420" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                      </div>
+                    </div>
+                    <div class="lines">
+                      <div class="line long-line"></div>
+                      <div class="line short-line"></div>
+                    </div>
+                    <div class="form-group">
+                      <textarea name="draft-proposal" id="draft-proposal" class="w-100" placeholder="If you agree to XXX then we would agree to YYY. (Engage as an equal – proposals should require a commitment or action from both parties)" maxlength="255"></textarea>
+                    </div>
+                  </div>
+                </div>
+        
+                <input type="radio" name="tabs" id="tab4" />
+                <label for="tab4" class="tab-heading">Close</label>
+                <div class="tab">
+                  <div class="w-100">
+                    <div class="d-flex justify-between">
+                      <h3>Top 3 Objections
+                        <span class="extra-space relative"><img src="./icons/i-green.svg" class="info-icon green" alt="More info icon">
+                        <p class="helper-text">Prioritize and distill the 3 worst objections that you may get to your advance, and consider the best way to overcome these objections. Where possible, pre-empt likely objections before they are raised by the Client.</p></span>:
+                      </h3>
+                      <button class="btn green overlay-trigger" type="button" value="overlay-twelve"><object class="mr-05" data="./icons/green-video-icon.svg" width="14" height="8"></object>ASSIST</button>
+                      <div class="overlay" id="overlay-twelve">
+                        <iframe src="https://player.vimeo.com/video/809829340?h=8f3d43ec9b" width="750" height="420" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                      </div>
+                    </div>
+                    <div class="lines">
+                      <div class="line long-line"></div>
+                      <div class="line short-line"></div>
+                    </div>
+                    <div class="form-group">
+                      <div class="objection-row d-flex w-100">
+                        <h4 class="objection-heading">Objection</h4>
+                        <h4 class="strategy-heading">Strategy</h4>
+                        <h4 class="notes-heading">Notes</h4>
+                      </div>
+                      <div class="objection-row d-flex w-100">
+                          <textarea name="objection1" id="objection1" class="w-100 objection" maxlength="255" placeholder="OBJ1 – e.g. Too expensive/not worth it"></textarea>
+                          <div>
+                            <select name="strategy1" id="strategy1" class="strategy"> 
+                              <option value="" selected disabled hidden>Select an option</option>
+                              <option value="Pre-empty/early disclosure">Pre-empty/early disclosure</option>
+                              <option value="Educate/Inform">Educate/Inform</option>
+                              <option value="Trade Mutual Value">Trade Mutual Value</option>
+                              <option value="Take a bet">Take a bet</option>
+                              <option value="Frame within client goals">Frame within client goals</option>
+                            </select>
+                          </div>
+                          <textarea name="notes1" id="notes1" class="w-100 notes" maxlength="255" placeholder="Objection handling notes"></textarea>
+                      </div>
+
+                      <div class="objection-row d-flex w-100">
+                        <textarea name="objection2" id="objection2" class="w-100 objection" maxlength="255" placeholder="OBJ 2 – e.g. Too difficult"></textarea>
+                        <div>
+                          <select name="strategy2" id="strategy2" class="strategy"> 
+                            <option value="" selected disabled hidden>Select an option</option>
+                            <option value="Pre-empty/early disclosure">Pre-empty/early disclosure</option>
+                            <option value="Educate/Inform">Educate/Inform</option>
+                            <option value="Trade Mutual Value">Trade Mutual Value</option>
+                            <option value="Take a bet">Take a bet</option>
+                            <option value="Frame within client goals">Frame within client goals</option>
+                          </select>
+                        </div>
+                        <textarea name="notes2" id="notes2" class="w-100 notes" maxlength="255" placeholder="Objection handling notes"></textarea>
+
+                      
+                      </div>
+
+                      <div class="objection-row d-flex w-100">
+                        <textarea name="objection3" id="objection3" class="w-100 objection" maxlength="255" placeholder="OBJ3 – e.g. Lack of authority or budget"></textarea>
+                        <div>
+                          <select name="strategy3" id="strategy3" class="strategy"> 
+                            <option value="" selected disabled hidden>Select an option</option>
+                            <option value="Pre-empty/early disclosure">Pre-empty/early disclosure</option>
+                            <option value="Educate/Inform">Educate/Inform</option>
+                            <option value="Trade Mutual Value">Trade Mutual Value</option>
+                            <option value="Take a bet">Take a bet</option>
+                            <option value="Frame within client goals">Frame within client goals</option>
+                          </select>
+                        </div>
+                        <textarea name="notes3" id="notes3" class="w-100 notes" maxlength="255" placeholder="Objection handling notes"></textarea>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="generate-wrapper">
+        <button  class="btn grey savepdf" onclick="GeneratePdf()">Save as PDF</button>
+      </div>
+    </div>
+   
+    <div class="private-notes">
+      <h3>Private Notes:</h3>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+    </div>
+    <div class="bottom">
+      <div>
+        <p class="mb-05"><strong>If you have any questions or suggestions, please feel free to email us directly at <a href="mailto:someone@@swaggersales.com">someone@@swaggersales.com</a>. <br> We're always happy to help
+        </strong>
+        </p>
+        <p>This form including layout and design is copyright © 2020-2023 Swift Sales Applications Inc.<br>
+          All rights reserved foreign and domestic.</p>
+      </div>
+    </div>
+</main>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
