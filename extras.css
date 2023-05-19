@@ -1,3 +1,5 @@
+/* general rules for all the pages  */
+
 :root {
   --orange: #EF5A2A;
   --blue: #025497;
@@ -28,89 +30,39 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.d-flex {
-  display: flex;
-}
+.d-flex { display: flex;}
+.justify-center { justify-content: center;}
+.justify-between { justify-content: space-between;}
+.justify-end { justify-content: flex-end;}
+.items-center { align-items: center;}
 
-.justify-center {
-  justify-content: center;
-}
-.justify-between {
-  justify-content: space-between;
-}
-.justify-end {
-  justify-content: flex-end;
-}
-.items-center {
-  align-items: center;
-}
-.m-2 {
-  margin: 2rem;
-}
-.mr-05 {
-  margin-right: 0.5rem;
-}
-.mb-1 {
-  margin-bottom: 1rem;
-}
-.mb-05 {
-  margin-bottom: 0.5rem;
-}
-.mb-2 {
-  margin-bottom: 2rem;
-}
-.ml-1 {
-  margin-left: 1rem;
-}
-.mr-1 {
-  margin-right: 1rem;
-}
-.pl-1 {
-  padding-left: 1rem;
-}
-.pr-1 {
-  padding-right: 1rem;
-}
-.pl-05 {
-  padding-left: 0.5rem;
-}
-.pr-05 {
-  padding-right: 0.5rem;
-}
-.w-50 {
-  width: 50%;
-}
-.w-100 {
-  width: 100%;
-}
-.relative {
-  position: relative;
-}
+.m-2 { margin: 2rem;}
+.mr-05 { margin-right: 0.5rem;}
+.mb-1 { margin-bottom: 1rem;}
+.mb-05 { margin-bottom: 0.5rem;}
+.mb-2 { margin-bottom: 2rem;}
+.ml-1 { margin-left: 1rem;}
+.mr-1 { margin-right: 1rem;}
 
-h1 {
-  font-size: 1.4rem;
-}
+.pl-1 { padding-left: 1rem;}
+.pr-1 { padding-right: 1rem;}
+.pl-05 { padding-left: 0.5rem;}
+.pr-05 { padding-right: 0.5rem;}
+.p-0 { padding: 0; }
 
-h2 {
-  font-size: 1.2rem;
-}
+.w-50 { width: 50%;}
+.w-100 { width: 100%;}
+.relative { position: relative; }
 
-h3 {
-  font-size: 1.1rem;
-}
-
+h1 { font-size: 1.4rem;}
+h2 { font-size: 1.2rem;}
+h3 { font-size: 1.1rem; }
 h4 {
   font-size: 1rem;
   text-transform: uppercase;
   color: var(--darkGrey);
 }
-p {
-  font-size: 0.7rem;
-}
-
-.p-0 {
-  padding: 0;
-}
+p { font-size: 0.7rem; }
 
 input, textarea, select {
   padding: 0.75rem 0.5rem;
@@ -120,17 +72,13 @@ input, textarea, select {
   font-family: "Montserrat", sans-serif;
   min-height: 42px;
 }
-input::placeholder, textarea::placeholder {
-  opacity: 0.5;
-}
+input::placeholder, textarea::placeholder { opacity: 0.5; }
 textarea {
   resize: none;
   height: auto;
   overflow: hidden;
 }
-select {
-  margin-bottom: 5px;
-}
+select { margin-bottom: 5px;}
 
 input:focus, textarea:focus {
   outline: 1px solid var(--grey);
@@ -141,6 +89,12 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus, 
 input:-webkit-autofill:active {
   -webkit-text-fill-color: var(--darkGrey)!important;
+}
+input:-internal-autofill-selected { background-color: var(--white);}
+
+a, a:visited {
+  color: #0067b8;
+  text-decoration: none;
 }
 
 .overlay {
@@ -166,3 +120,48 @@ input:-webkit-autofill:active {
   align-items: center;
   justify-content: center;
 }
+
+
+.helper-text {
+  position: absolute;
+  visibility: hidden;
+  bottom: calc( 100% + 5px );
+  width: 25rem;
+  background-color: var(--darkBlue);
+  color: var(--white);
+  padding: 1rem;
+  text-transform: initial;
+  font-weight: 300;
+  z-index: 99;
+  border-radius: 5px;
+}
+.helper-text.short {
+  width: auto;
+  white-space: nowrap;
+}
+.extra-space:hover:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: calc( 50% - 2px) ;
+  margin-left: -7px;
+  border-width: 7px;
+  border-style: solid;
+  border-color: var(--darkBlue) transparent transparent transparent;
+}
+
+.extra-space:hover .helper-text { visibility: visible; }
+
+.generate-wrapper {
+  background-color: var(--lightGrey);
+  padding: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn.savepdf {
+  padding: 0.5rem 1rem;
+}
+
+.form-group { margin-top: 0.8rem; }
+

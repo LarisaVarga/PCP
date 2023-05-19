@@ -12,11 +12,9 @@
 .swift-logo, .first-assist-wrapper { width: 15rem; }
 
 .pcp-section { margin-bottom: 15px; }
-
 .orange-section { border: 1px solid var(--orange); }
 .blue-section { border: 1px solid var(--blue); }
 .green-section { border: 1px solid var(--green); }
-.purple-section { border: 1px solid var(--purple); }
 
 .section-title {
   padding: 0.7rem;
@@ -26,7 +24,6 @@
 .orange-section .section-title { background-color: var(--orange); }
 .blue-section .section-title { background-color: var(--blue); }
 .green-section .section-title {  background-color: var(--green); }
-.purple-section .section-title { background-color: var(--purple); }
 
 .section-title h2 {
   color: var(--white);
@@ -125,7 +122,6 @@
 #opening, #draft-proposal { min-height: 5rem; }
 #carrots, #sticks { width: calc( 100% - 7.3rem ); }
 #ra, #oa { width: calc( 100% - 13.8rem ); }
-.form-group { margin-top: 0.8rem; }
 
 .objection-row {
   gap: 10px;
@@ -139,11 +135,6 @@
 }
 
 .os-wrapper, .steps-wrapper { width: 50%;}
-
-a, a:visited {
-  color: #0067b8;
-  text-decoration: none;
-}
 
 .tabs {
   display: flex;
@@ -253,53 +244,8 @@ a, a:visited {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-input:-internal-autofill-selected {
-  background-color: var(--white);
-}
 
-.helper-text {
-  position: absolute;
-  visibility: hidden;
-  bottom: calc( 100% + 5px );
-  width: 25rem;
-  background-color: var(--darkBlue);
-  color: var(--white);
-  padding: 1rem;
-  text-transform: initial;
-  font-weight: 300;
-  z-index: 99;
-  border-radius: 5px;
-}
-.helper-text.short {
-  width: auto;
-  white-space: nowrap;
-}
-.extra-space:hover:before {
-  content: "";
-  position: absolute;
-  top: -5px;
-  left: calc( 50% - 2px) ;
-  margin-left: -7px;
-  border-width: 7px;
-  border-style: solid;
-  border-color: var(--darkBlue) transparent transparent transparent;
-}
-
-.extra-space:hover .helper-text { visibility: visible; }
-
-.discver-row textarea, .discover-subheading { width: calc( 50% - 0.5rem); }
-
-.generate-wrapper {
-  background-color: var(--lightGrey);
-  padding: 0.75rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.btn.savepdf {
-  padding: 0.5rem 1rem;
-}
-
+.discover-row textarea, .discover-subheading { width: calc( 50% - 0.5rem); }
 
 @media (min-width: 768px) {
   .tabs label {
