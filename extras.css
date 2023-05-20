@@ -108,7 +108,6 @@ a, a:visited {
   bottom: 0;
   background-color: rgba(0,0,0,0.5);
   z-index: 99; 
-  cursor: pointer; 
   justify-content: center;
   align-items: center;
 }
@@ -174,4 +173,5 @@ a, a:visited {
   right: 0;
   bottom: 100%;
   padding: 0.5rem;
+  cursor: pointer;
 }
