@@ -1,7 +1,7 @@
 @media print {
   @page {
     margin:0;
-    size: a4;
+    size: A4;
   }
   .pagebreak {
     clear: both;
