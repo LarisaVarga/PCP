@@ -26,7 +26,12 @@
     margin: 0;
   }
   input, #strategic-objective { margin-left: 0.2rem;}
-
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus, 
+  input:-webkit-autofill:active {
+    -webkit-text-fill-color: var(--black)!important;
+  }
   select {
     appearance: none;
     -webkit-appearance: none;
@@ -175,10 +180,10 @@
     justify-content: flex-start;
   }
   .objection-row textarea, .objection-row .objection-heading, .objection-row .notes-heading {
-    width: calc( 50% - 5rem);
+    width: calc( 50% - 5.5rem);
   }
   .objection-row select, .objection-row .strategy-heading {
-    width: 10rem;
+    width: 11rem;
   }
   #opening, #draft-proposal {
     min-height: 0rem!important;
