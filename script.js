@@ -4,12 +4,12 @@ function GeneratePdf() {
   window.print();
 }
 
-const sectionsTitles = document.querySelectorAll('.section-title');
+const sectionsTitles = document.querySelectorAll('.toggle-section');
 for (let i = 0; i < sectionsTitles.length; i++) {
   sectionsTitles[i].addEventListener("click", openSection, false);
 }
 function openSection() {
-  this.parentElement.classList.toggle('open');
+  this.parentElement.parentElement.classList.toggle('open');
 }
 
 

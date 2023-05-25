@@ -70,7 +70,7 @@ input, textarea, select {
   border: 0.5px solid var(--grey);
   color: var(--darkGrey);
   font-family: "Montserrat", sans-serif;
-  min-height: 42px;
+  min-height: 35px;
 }
 input::placeholder, textarea::placeholder { opacity: 0.5; }
 textarea {
