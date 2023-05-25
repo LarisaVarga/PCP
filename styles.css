@@ -119,7 +119,8 @@
 #other-contact, #key-contact { width: calc( 100% - 15.3rem ); }
 #meeting-lead, #meeting-coach, #meeting-date { width: calc( 100% - 10.2rem ); }
 
-#opening, #draft-proposal { min-height: 5rem; }
+#opening{ min-height: 5rem; }
+#draft-proposal { min-height: 3rem; }
 #carrots, #sticks { width: calc( 100% - 7.3rem ); }
 #ra, #oa { width: calc( 100% - 13.8rem ); }
 

@@ -14,8 +14,8 @@
   h1 { font-size: 1.3rem; }
   h2, .tabs label { font-size: 1.1rem; }
   h3, .checkboxes-wrapper label, .page-title { font-size: 0.9rem; }
-  h4, input, textarea, select, option { font-size: 0.8rem; color: var(--black); }
-  p { font-size: 0.7rem; color: var(--black) }
+  h4 { font-size: 0.8rem; color: var(--black); }
+  p, input, textarea, select, option { font-size: 0.7rem; color: var(--black) }
   .sections-wrapper { margin: 0rem; }
   .btn, .extra-space, .info-icon, header, footer, .first-assist-wrapper { display: none; }
   input, textarea, select, option {
