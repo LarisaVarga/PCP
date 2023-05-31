@@ -56,7 +56,7 @@ body {
 
 h1 { font-size: 1.4rem;}
 h2 { font-size: 1.2rem;}
-h3 { font-size: 1.1rem; }
+h3 { font-size: 1.1rem; text-transform: capitalize; }
 h4 {
   font-size: 1rem;
   text-transform: uppercase;
@@ -65,17 +65,17 @@ h4 {
 p { font-size: 0.7rem; }
 
 input, textarea, select {
-  padding: 0.75rem 0.5rem;
+  padding: 0.7rem 0.5rem;
   border-radius: 0.5rem;
   border: 0.5px solid var(--grey);
   color: var(--darkGrey);
   font-family: "Montserrat", sans-serif;
-  min-height: 35px;
+  min-height: 40px;
+  height: 40px;
 }
 input::placeholder, textarea::placeholder { opacity: 0.5; }
 textarea {
   resize: none;
-  height: auto;
   overflow: hidden;
 }
 select { margin-bottom: 5px;}
