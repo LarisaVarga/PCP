@@ -8,14 +8,16 @@
     clear: both;
     page-break-after: always;
   }
+  .generate-wrapper { padding: 0;}  
   .margin-top-page-two { margin-top: 1cm; height: 0; display: initial;}
   body { margin: 1cm;}
   body, * { font-family: 'Helvetica', 'Arial', sans-serif; }
   h1 { font-size: 1.3rem; }
-  h2, .tabs label { font-size: 1.1rem; }
-  h3, .checkboxes-wrapper label, .page-title { font-size: 0.95rem; }
-  h4 { font-size: 0.8rem; color: var(--black); }
-  p, input, textarea, select, option { font-size: 0.7rem; color: var(--black) }
+  h2, .tabs label { font-size: 1.2rem; }
+  h3, .page-title { font-size: 1.1rem; }
+  .checkboxes-wrapper label { font-size: 1rem;}
+  h4 { font-size: 0.9rem; color: var(--black); }
+  p, input, textarea, select, option { font-size: 0.8rem; color: var(--black) }
   .sections-wrapper { margin: 0rem; }
   .btn, .extra-space, .info-icon, header, footer, .first-assist-wrapper { display: none; }
   input, textarea, select, option {
@@ -26,7 +28,6 @@
     margin: 0;
     background-color: transparent;
     min-height: 1.25rem;
-    font-size: 0.7rem; 
     color: var(--black)
   }
   input, #strategic-objective { margin-left: 0.2rem;}
@@ -140,12 +141,12 @@
     display: block;
   }
   #meeting-date { width: auto; }
-  #account { width: calc( 100% - 5rem ); }
-  #key-contact { width: calc( 100% - 9.7rem ); }
-  #other-contact { width: calc( 100% - 10.7rem ); }
-  #meeting-lead { width: calc( 100% - 7.5rem ); }
-  #meeting-coach { width: calc( 100% - 6.5rem ); }
-  #strategic-objective { width: calc( 100% - 10.2rem ); }
+  #account { width: calc( 100% - 5.3rem ); }
+  #key-contact { width: calc( 100% -10rem ); }
+  #other-contact { width: calc( 100% - 12rem ); }
+  #meeting-lead { width: calc( 100% - 7.8rem ); }
+  #meeting-coach { width: calc( 100% - 6.8rem ); }
+  #strategic-objective { width: calc( 100% - 11.3rem ); }
 
   .tabs .tab { display: block !important; }
 
